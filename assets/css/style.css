@@ -1334,7 +1334,7 @@ section {
 #contact .php-email-form input, #contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  text-align: center;
+  box-align: center;
   font-size: 14px;
 }
 
@@ -1344,12 +1344,12 @@ section {
 
 #contact .php-email-form input {
   padding: 20px 15px;
-  text-align: center;
+  box-align: center;
 }
 
 #contact .php-email-form textarea {
   padding: 12px 15px;
-  text-align: center;
+  box-align: center;
 }
 
 #contact .php-email-form button[type="submit"] {
