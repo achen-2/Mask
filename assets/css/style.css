@@ -663,138 +663,158 @@ section {
 
 /* Services Section
 --------------------------------*/
-#services {
-  padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-}
-
-#services .box {
+#services .info-wrap {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 10px 40px 10px;
+}
+
+#services .info {
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
 }
 
-#services .box:hover {
-  transform: translateY(-5px);
+#services .info i {
+  font-size: 20px;
+  color: #1bbd36;
+  float: left;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #1bbd36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s;
 }
 
-#services .icon {
-  position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
-}
-
-#services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#services .title a {
+#services .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
   color: #111;
 }
 
-#services .box:hover .title a {
-  color: #007bff;
-}
-
-#services .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
+#services .info p {
+  padding: 0 0 0 60px;
   margin-bottom: 0;
+  font-size: 14px;
+  color: #444444;
 }
 
-#why-us {
-  padding: 60px 0;
-  background: #004a99;
-}
-
-#why-us .section-header h3, #why-us .section-header p {
+#services .info:hover i {
+  background: #1bbd36;
   color: #fff;
 }
 
-#why-us .card {
-  background: #00458f;
-  border-color: #00458f;
-  border-radius: 10px;
-  margin: 0 15px;
-  padding: 15px 0;
+#services .php-email-form {
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  background: #fff;
+}
+
+#services .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+#services .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#services .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#services .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+#services .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
   text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
-  height: 100%;
+  padding: 15px;
+  font-weight: 600;
 }
 
-@media (max-width: 991px) {
-  #why-us .card {
-    margin: 0;
+#services .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+#services .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#services .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#services .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #1bbd36;
+}
+
+#services .php-email-form input {
+  height: 44px;
+}
+
+#services .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+#services .php-email-form button[type="submit"] {
+  background: #1bbd36;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+#services .php-email-form button[type="submit"]:hover {
+  background: #2ae149;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-#why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
-}
-
-#why-us .card i {
-  font-size: 48px;
-  padding-top: 15px;
-  color: #bfddfe;
-}
-
-#why-us .card h5 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#why-us .card p {
-  font-size: 15px;
-  color: #d8eafe;
-}
-
-#why-us .card .readmore {
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #fff solid 2px;
-}
-
-#why-us .counters {
-  padding-top: 40px;
-}
-
-#why-us .counters span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-  display: block;
-  color: #fff;
-}
-
-#why-us .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #cce5ff;
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Portfolio Section
