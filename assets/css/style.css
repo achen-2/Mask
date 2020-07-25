@@ -717,6 +717,10 @@ section {
   margin-bottom: 0;
 }
 
+#services .form {
+  text-align: center;
+}
+
 #why-us {
   padding: 60px 0;
   background: #004a99;
