@@ -1334,6 +1334,7 @@ section {
 #contact .php-email-form input, #contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -1343,15 +1344,18 @@ section {
 
 #contact .php-email-form input {
   padding: 20px 15px;
+  text-align: center;
 }
 
 #contact .php-email-form textarea {
   padding: 12px 15px;
+  text-align: center;
 }
 
 #contact .php-email-form button[type="submit"] {
   background: #007bff;
   border: 0;
+  text-align: center;
   border-radius: 20px;
   padding: 8px 30px;
   color: #fff;
